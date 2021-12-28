@@ -1,4 +1,4 @@
 #!/bin/bash
-export AIRFLOW_HOME="~/airflow"
+export AIRFLOW_HOME=~/airflow
 export AIRFLOW_VERSION=2.2.3
-export PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)
+export PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
