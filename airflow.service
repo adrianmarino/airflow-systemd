@@ -1,0 +1,13 @@
+[Unit]
+Description=Airflow server for user %u
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=%h/airflow
+ExecStart=%h/airflow/bin/start-airflow
+ExecStop=%h/airflow/bin/stop-airflow
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target

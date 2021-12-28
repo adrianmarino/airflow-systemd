@@ -1,0 +1,21 @@
+#!/bin/zsh                                                                                                                                                                                                                                                                                                               
+# -----------------------------------------------------------------------------                                                                                                                                                                                                                                          
+# Main                                                                                                                                                                                                                                                                                                                   
+# -----------------------------------------------------------------------------                                                                                                                                                                                                                                          
+ln -s /run/mysqld/mysqld.sock /tmp/mysql.sock                                                                                                                                                                                                                                                                            
+
+ABSPATH=$(readlink -f $0)
+ABSDIR=$(dirname $ABSPATH)
+
+source "$ABSDIR/../config.conf"
+source "$CONDA_PATH/etc/profile.d/conda.sh"
+
+echo "ENV: $ENV"
+conda activate $ENV
+
+echo "Start airflow web application"
+/usr/bin/nohup nohup airflow webserver --port $PORT &
+
+echo "Start airflow scheduler"
+/usr/bin/nohup nohup airflow scheduler &
+# ----------------------------------------------------------------------------
