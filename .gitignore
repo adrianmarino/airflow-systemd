@@ -1,2 +1,4 @@
 nohup.out
 logs/
+dags/
+airflow-webserver.pid
