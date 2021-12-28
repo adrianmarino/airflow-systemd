@@ -30,25 +30,33 @@ $ conda env update -f environment.yml
 $ cp airflow.service ~/.config/systemd/user/
 ```
 
-**Step 4**: Refresh systemd daemon with updated config.
+**Step 4**: Import required common shell env variables:
+
+```bash
+$ echo "source ~/airflow/.shell.airflowrc" >> ~/.bashrc 
+or
+$ echo "source ~/airflow/.shell.airflowrc" >> ~/.zshrc
+```
+
+**Step 5**: Refresh systemd daemon with updated config.
 
 ```bash
 $ systemctl --user daemon-reload
 ```
 
-**Step 5**: Start service on boot.
+**Step 6**: Start service on boot.
 
 ```bash
 $ systemctl --user enable airflow
 ```
 
-**Step 6**: Start airflow as systemd daemon.
+**Step 7**: Start airflow as systemd daemon.
 
 ```bash
 $ systemctl --user start airflow
 ```
 
-**Step 7**: create a `~/airflow/dags` directory where will all dags be stored.
+**Step 8**: create a `~/airflow/dags` directory where will all dags be stored.
 
 # Config file
 
