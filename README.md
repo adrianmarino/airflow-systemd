@@ -48,7 +48,7 @@ $ systemctl --user enable airflow
 $ systemctl --user start airflow
 ```
 
-**Step 7**: create a `~/airflow/dags` directory when save all dag.py definitions.
+**Step 7**: create a `~/airflow/dags` directory where will all dags be stored.
 
 # Config file
 
