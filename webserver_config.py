@@ -125,6 +125,4 @@ AUTH_TYPE = AUTH_DB
 # APP_THEME = "superhero.css"
 # APP_THEME = "united.css"
 # APP_THEME = "yeti.css"
-
-
 APP_THEME = "spacelab.css"
