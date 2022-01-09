@@ -5,9 +5,9 @@ Description=Airflow server for user %u
 Type=oneshot
 RemainAfterExit=yes
 WorkingDirectory=%h/airflow
-ExecStart=%h/airflow/bin/start-airflow
-ExecStop=%h/airflow/bin/stop-airflow
+ExecStart=%h/airflow/bin/start
+ExecStop=%h/airflow/bin/stop
 TimeoutStartSec=0
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
