@@ -14,8 +14,8 @@ echo "ENV: $ENV"
 conda activate $ENV
 
 echo "Start airflow web application"
-/usr/bin/nohup nohup airflow webserver --port $PORT &
+/usr/bin/nohup airflow webserver --port $PORT &
 
 echo "Start airflow scheduler"
-/usr/bin/nohup nohup airflow scheduler &
+/usr/bin/nohup airflow scheduler &
 # ----------------------------------------------------------------------------
