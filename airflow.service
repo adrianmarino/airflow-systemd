@@ -8,6 +8,8 @@ WorkingDirectory=%h/airflow
 ExecStart=%h/airflow/bin/start
 ExecStop=%h/airflow/bin/stop
 TimeoutStartSec=0
+Restart=on-failure
+RestartSec=5s
 
 [Install]
 WantedBy=default.target
