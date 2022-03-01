@@ -2,12 +2,12 @@
 
 Install airflow server as systemd daemon under linux. This run with your regular linux user.
 
-# Requirements
+## Requirements
 
 * miniconda
 * mariadb/mysql
 
-# Setup airflow
+## Setup airflow
 
 **Step 1**: Clone repo.
 
@@ -58,7 +58,7 @@ $ systemctl --user start airflow
 
 **Step 8**: create a `~/airflow/dags` directory where will all dags be stored.
 
-# Config file
+## Config file
 
 `config.conf`:
 ```bash
@@ -67,7 +67,7 @@ ENV="airflow"
 PORT="9090"
 ```
 
-# Setup database
+## Setup database
 
 **Step 1**: Create database and an user used by airflow server to access to database.
 
