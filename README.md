@@ -73,8 +73,10 @@ PORT="9090"
 
 ```bash
 CREATE DATABASE airflow_db;
-CREATE USER airflow_user WITH PASSWORD 'airflow_pass';
-GRANT ALL PRIVILEGES ON DATABASE airflow_db TO airflow_user;
+CREATE USER airflow_user;
+ALTER USER 'airflow_user'@'localhost' IDENTIFIED BY 'airflow_pass';
+GRANT ALL PRIVILEGES ON airflow_db.* TO 'airflow_user'@'%';
+FLUSH PRIVILEGES;
 ```
 
 **Step 2**: Config db connection string under `airflow.cfg`: 
@@ -92,10 +94,5 @@ $ airflow initdb
 **Step 3**: Create an admin airflow webserver user:
 
 ```bash
-$ airflow users create \ 
-    --username username \
-    --firstname Fistname \
-    --lastname LastName \
-    --role Admin \
-    --email my.email@gmail.com
+$ airflow users create --username username --firstname Fistname --lastname LastName --role Admin --email my.email@gmail.com
 ```
