@@ -2,3 +2,4 @@ nohup.out
 logs/
 dags/
 airflow-webserver.pid
+__pycache__/
