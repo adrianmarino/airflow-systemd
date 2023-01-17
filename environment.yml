@@ -11,6 +11,7 @@ dependencies:
   - pip
   - python=3.10
   - libgcc
+  - bunch
   - pip:
     - apache-airflow
     - apache-airflow-providers-ftp
