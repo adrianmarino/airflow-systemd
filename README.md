@@ -18,19 +18,25 @@ $ mv airflow-systemd airflow
 $ cd airflow
 ```
 
-**Step 2**: Create conda environment required to run airflow.
+**Step 2**: Install mysql dev tools.
 
 ```bash
-$ conda env update -f environment.yml
+$  sudo apt install libmysqlclient-dev
+```
+ 
+**Step 3**: Create conda environment required to run airflow.
+
+```bash
+$ conda env create -f environment.yml
 ```
 
-**Step 3**: Copy service file user level systemd config path:
+**Step 4**: Copy service file user level systemd config path:
 
 ```bash
 $ cp airflow.service ~/.config/systemd/user/
 ```
 
-**Step 4**: Import required common shell env variables:
+**Step 5**: Import required common shell env variables:
 
 ```bash
 $ echo "source ~/airflow/.shell.airflowrc" >> ~/.bashrc 
@@ -38,25 +44,25 @@ or
 $ echo "source ~/airflow/.shell.airflowrc" >> ~/.zshrc
 ```
 
-**Step 5**: Refresh systemd daemon with updated config.
+**Step 6**: Refresh systemd daemon with updated config.
 
 ```bash
 $ systemctl --user daemon-reload
 ```
 
-**Step 6**: Start service on boot.
+**Step 7**: Start service on boot.
 
 ```bash
 $ systemctl --user enable airflow
 ```
 
-**Step 7**: Start airflow as systemd daemon.
+**Step 8**: Start airflow as systemd daemon.
 
 ```bash
 $ systemctl --user start airflow
 ```
 
-**Step 8**: create a `~/airflow/dags` directory where will all dags be stored.
+**Step 9**: create a `~/airflow/dags` directory where will all dags be stored.
 
 ## Config file
 
