@@ -4,9 +4,9 @@ Description=Airflow server for user %u
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-WorkingDirectory=%h/airflow
-ExecStart=%h/airflow/bin/start
-ExecStop=%h/airflow/bin/stop
+WorkingDirectory=%h/airflow-systemd
+ExecStart=%h/airflow-systemd/bin/start
+ExecStop=%h/airflow-systemd/bin/stop
 TimeoutStartSec=0
 
 [Install]

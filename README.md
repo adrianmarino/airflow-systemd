@@ -44,25 +44,34 @@ or
 $ echo "source ~/airflow/.shell.airflowrc" >> ~/.zshrc
 ```
 
-**Step 6**: Refresh systemd daemon with updated config.
+
+**Step 6**: Replace __HOME with your home path.
+
+```bash
+$ sed -i 's/__HOME__/YOUR_HOME_PATH/g' $HOME/airflow/airflow.cfg
+```
+
+
+**Step 7**: Refresh systemd daemon with updated config.
 
 ```bash
 $ systemctl --user daemon-reload
 ```
 
-**Step 7**: Start service on boot.
+**Step 8**: Start service on boot.
 
 ```bash
 $ systemctl --user enable airflow
 ```
 
-**Step 8**: Start airflow as systemd daemon.
+
+**Step 9**: Start airflow as systemd daemon.
 
 ```bash
 $ systemctl --user start airflow
 ```
 
-**Step 9**: create a `~/airflow/dags` directory where will all dags be stored.
+**Step 10**: create a `~/airflow/dags` directory where will all dags be stored.
 
 ## Config file
 
@@ -70,7 +79,7 @@ $ systemctl --user start airflow
 ```bash
 CONDA_PATH="/opt/miniconda3"
 ENV="airflow"
-PORT="9090"
+PORT="8080"
 ```
 
 ## Setup database
