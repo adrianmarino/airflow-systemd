@@ -5,7 +5,8 @@ Install airflow server as systemd daemon under linux. This run with your regular
 ## Requirements
 
 * miniconda
-* mariadb/mysql
+* mariadb >= 10.2.7
+
 
 ## Setup airflow
 
@@ -44,13 +45,11 @@ or
 $ echo "source ~/airflow/.shell.airflowrc" >> ~/.zshrc
 ```
 
-
-**Step 6**: Replace __HOME with your home path.
+**Step 6**: Replace `__HOME__` with your home path.
 
 ```bash
 $ sed -i 's/__HOME__/YOUR_HOME_PATH/g' $HOME/airflow/airflow.cfg
 ```
-
 
 **Step 7**: Refresh systemd daemon with updated config.
 
@@ -64,50 +63,46 @@ $ systemctl --user daemon-reload
 $ systemctl --user enable airflow
 ```
 
-
-**Step 9**: Start airflow as systemd daemon.
-
-```bash
-$ systemctl --user start airflow
-```
-
-**Step 10**: create a `~/airflow/dags` directory where will all dags be stored.
-
-## Config file
-
-`config.conf`:
-```bash
-CONDA_PATH="/opt/miniconda3"
-ENV="airflow"
-PORT="8080"
-```
-
-## Setup database
-
-**Step 1**: Create database and an user used by airflow server to access to database.
+**Step 9**: Create database and user used by airflow server to access to database schema.
 
 ```bash
 CREATE DATABASE airflow_db;
 CREATE USER airflow_user;
-ALTER USER 'airflow_user'@'localhost' IDENTIFIED BY 'airflow_pass';
-GRANT ALL PRIVILEGES ON airflow_db.* TO 'airflow_user'@'%';
+GRANT ALL PRIVILEGES ON airflow_db.* TO 'airflow_user'@localhost IDENTIFIED BY 'airflow_pass';
 FLUSH PRIVILEGES;
 ```
 
-**Step 2**: Config db connection string under `airflow.cfg`: 
+**Step 10**: Config db connection string under `airflow.cfg`: 
 
 ```init
 sql_alchemy_conn = mysql://airflow_user:airflow_pass@localhost/airflow_db
 ```
 
-**Step 3**: Initialize db:
+**Step 11**: Initialize db:
 
 ```bash
-$ airflow initdb
+$ airflow db init
 ```
 
-**Step 3**: Create an admin airflow webserver user:
+**Step 12**: Create an admin airflow webserver user:
 
 ```bash
 $ airflow users create --username username --firstname Fistname --lastname LastName --role Admin --email my.email@gmail.com
 ```
+
+**Step 13**: Check config of conda installacion in `config.conf`.
+
+```bash
+CONDA_PATH="/opt/miniconda3" <===
+ENV="airflow"
+PORT="8080"
+```
+
+**Step 14**: Start airflow as systemd daemon.
+
+```bash
+$ systemctl --user start airflow
+```
+
+**Step 15**: create a `~/airflow/dags` directory where will all dags be stored.
+
