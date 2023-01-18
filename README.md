@@ -95,12 +95,10 @@ $ airflow users create \
   --email my.email@gmail.com
 ```
 
-**Step 13**: Check config of conda installacion in `config.conf`.
+**Step 13**: Check miniconda home path in `config.conf`.
 
 ```bash
-CONDA_PATH="/opt/miniconda3" <===
-ENV="airflow"
-PORT="8080"
+CONDA_PATH="/opt/miniconda3"
 ```
 
 **Step 14**: Start airflow as systemd daemon.
