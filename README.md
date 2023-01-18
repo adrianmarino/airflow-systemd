@@ -22,7 +22,7 @@ $ cd airflow
 **Step 2**: Install mysql dev tools.
 
 ```bash
-$  sudo apt install libmysqlclient-dev
+$ sudo apt install libmysqlclient-dev
 ```
  
 **Step 3**: Create conda environment required to run airflow.
