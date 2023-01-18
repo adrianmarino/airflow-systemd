@@ -87,7 +87,12 @@ $ airflow db init
 **Step 12**: Create an admin airflow webserver user:
 
 ```bash
-$ airflow users create --username username --firstname Fistname --lastname LastName --role Admin --email my.email@gmail.com
+$ airflow users create \
+  --username username \
+  --firstname Fistname \
+  --lastname LastName \
+  --role Admin \
+  --email my.email@gmail.com
 ```
 
 **Step 13**: Check config of conda installacion in `config.conf`.
