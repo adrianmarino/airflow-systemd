@@ -13,9 +13,11 @@ source "$CONDA_PATH/etc/profile.d/conda.sh"
 echo "ENV: $ENV"
 conda activate $ENV
 
-echo "Start airflow web application"
-/usr/bin/nohup airflow webserver --port $PORT &
-
 echo "Start airflow scheduler"
 /usr/bin/nohup airflow scheduler &
+
+sleep 3
+
+echo "Start airflow web application"
+/usr/bin/nohup airflow webserver --port $PORT &
 # ----------------------------------------------------------------------------
