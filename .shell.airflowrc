@@ -1,4 +1,8 @@
 #!/bin/bash
 export AIRFLOW_HOME=~/airflow
-export AIRFLOW_VERSION=2.2.3
+export AIRFLOW_VERSION=2.7.0
 export PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
+
+export AIRFLOW__CORE__EXECUTOR=LocalExecutor
+export AIRFLOW__CORE__LOAD_EXAMPLES=False
+export AIRFLOW__CORE__DAGS_FOLDER=$AIRFLOW_HOME/dags

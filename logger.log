@@ -1,0 +1,208 @@
+2023-08-20 16:08:13,362 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:08:13,365 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:08:13,552 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:08:13,552 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:08:13,553 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:08:13,553 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:08:13,748 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:08:13,748 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:08:13,750 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:08:13,750 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:08:14,319 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:08:14,319 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:08:14,321 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:08:14,321 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:08:14,887 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:08:14,891 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:08:14,946 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:08:14,947 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:08:14,947 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:08:14,949 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:08:14,950 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:08:14,950 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:08:14,950 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:08:14,953 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:08:14,963 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:08:14,963 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:08:14,965 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:08:14,966 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:08:15,959 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:08:15,963 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:08:15,964 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:08:15,967 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:08:15,971 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:08:15,972 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:19:05,144 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:19:05,147 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:19:05,328 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:19:05,329 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:19:05,330 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:19:05,331 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:19:05,535 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:19:05,535 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:19:05,537 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:19:05,537 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:19:06,110 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:19:06,111 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:19:06,137 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:19:06,137 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:19:06,686 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:19:06,702 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:19:06,749 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:19:06,750 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:19:06,750 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:19:06,753 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:19:06,761 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:19:06,763 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:19:06,763 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:19:06,766 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:19:06,766 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:19:06,766 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:19:06,778 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:19:06,778 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:19:07,761 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:19:07,766 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:19:07,767 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:19:07,812 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:19:07,817 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:19:07,818 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:21:00,753 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:21:00,755 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:21:00,942 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:21:00,942 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:21:00,953 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:21:00,953 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:21:01,141 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:21:01,142 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:21:01,159 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:21:01,159 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:21:01,700 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:21:01,701 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:21:01,735 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:21:01,735 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:21:02,292 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:21:02,338 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:21:02,378 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:21:02,379 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:21:02,379 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:21:02,382 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:21:02,395 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:21:02,395 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:21:02,403 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:21:02,404 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:21:02,404 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:21:02,407 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:21:02,420 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:21:02,420 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:21:03,439 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:21:03,443 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:21:03,444 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:21:03,451 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:21:03,456 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:21:03,457 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:22:06,953 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:22:06,953 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:22:07,137 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:22:07,137 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:22:07,139 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:22:07,139 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:22:07,334 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:22:07,334 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:22:07,343 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:22:07,343 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:22:07,898 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:22:07,899 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:22:07,909 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:22:07,909 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:22:08,470 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:22:08,476 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:22:08,528 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:22:08,530 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:22:08,530 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:22:08,533 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:22:08,535 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:22:08,536 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:22:08,536 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:22:08,539 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:22:08,545 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:22:08,545 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:22:08,551 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:22:08,552 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:22:09,586 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:22:09,590 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:22:09,591 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:22:09,602 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:22:09,607 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:22:09,608 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:24:21,511 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:24:21,680 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:24:21,680 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:24:21,863 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:24:21,863 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:24:22,369 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:24:22,369 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:24:22,881 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:24:22,939 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:24:22,940 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:24:22,940 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:24:22,943 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:24:22,956 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:24:22,956 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:24:22,959 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:24:23,139 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:24:23,139 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:24:23,319 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:24:23,319 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:24:23,824 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:24:23,824 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:24:23,997 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:24:24,002 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:24:24,003 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:24:24,003 :: INFO :: root :: Not found an interactions change registers. Assume that users/items/interactions change from nothing.
+2023-08-20 16:24:24,326 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:24:24,384 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:24:24,385 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:24:24,385 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:24:24,388 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:24:24,400 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:24:24,400 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:24:25,411 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:24:25,415 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:24:25,416 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:24:25,416 :: INFO :: root :: Not found an interactions change registers. Assume that users/items/interactions change from nothing.
+2023-08-20 16:25:56,768 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:25:56,769 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2023-08-20 16:25:56,946 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:25:56,946 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:25:56,951 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:25:56,951 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2023-08-20 16:25:57,146 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:25:57,147 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:25:57,147 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:25:57,147 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: multi-qa-mpnet-base-dot-v1
+2023-08-20 16:25:57,711 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:25:57,711 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:25:57,719 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:25:57,719 :: INFO :: sentence_transformers.SentenceTransformer :: Load pretrained SentenceTransformer: all-mpnet-base-v2
+2023-08-20 16:25:58,277 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:25:58,278 :: INFO :: sentence_transformers.SentenceTransformer :: Use pytorch device: cuda
+2023-08-20 16:25:58,336 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:25:58,336 :: INFO :: InteractionService :: Filter by rating scale: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5]
+2023-08-20 16:25:58,337 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:25:58,337 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:25:58,338 :: INFO :: InteractionService :: Excluded: 0.0%
+2023-08-20 16:25:58,338 :: INFO :: InteractionService :: Filter interactions by user_n_interactions >= 20
+2023-08-20 16:25:58,340 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:25:58,341 :: INFO :: InteractionService :: Excluded: 4.6% (1670)
+2023-08-20 16:25:58,352 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:25:58,352 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:25:58,353 :: INFO :: InteractionInferenceService :: Check user_seq: True
+2023-08-20 16:25:58,353 :: INFO :: InteractionInferenceService :: Check item_seq: True
+2023-08-20 16:25:59,355 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:25:59,359 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:25:59,360 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:25:59,360 :: INFO :: root :: Waiting 179 minutes to change interactions.
+2023-08-20 16:25:59,361 :: INFO :: InteractionService :: Unrated interactions: 81.1%
+2023-08-20 16:25:59,366 :: INFO :: InteractionInferenceService :: Train interactions: 34893 - Users: 463, Items: 396
+2023-08-20 16:25:59,367 :: INFO :: InteractionInferenceService :: Future interactions: 148771 - Users: 463, Items: 396
+2023-08-20 16:25:59,367 :: INFO :: root :: Waiting 179 minutes to change interactions.

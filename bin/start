@@ -8,13 +8,20 @@ ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
 
 source "$ABSDIR/../config.conf"
+
 source "$CONDA_PATH/etc/profile.d/conda.sh"
 
 echo "ENV: $ENV"
 conda activate $ENV
 
+
+source "$ABSDIR/../config.conf"
+
+
 echo "Start airflow scheduler"
-/usr/bin/nohup airflow scheduler &
+pwd
+
+/usr/bin/nohup airflow scheduler & 
 
 sleep 3
 

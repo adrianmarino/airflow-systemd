@@ -3,7 +3,7 @@
 # Functions
 # -----------------------------------------------------------------------------
 function get_pit() {
-    ps -fea | grep -v grep | grep $1 | grep -v grep | awk '{print $2}' | head -n 1
+    ps -fea | grep -v grep | grep "$1" | grep -v grep | awk '{print $2}' | head -n 1
 }
 # -----------------------------------------------------------------------------
 #
@@ -12,6 +12,7 @@ function get_pit() {
 # -----------------------------------------------------------------------------
 # Main
 # -----------------------------------------------------------------------------
-kill -9 $(get_pit "airflow webserver")
+kill -9 $(get_pit "airflow-webserver")
 kill -9 $(get_pit "airflow scheduler")
+kill -9 $(get_pit "airflow executor")
 # -----------------------------------------------------------------------------
