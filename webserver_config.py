@@ -111,3 +111,5 @@ AUTH_TYPE = AUTH_DB
 # APP_THEME = "cerulean.css"
 # APP_THEME = "cosmo.css"
 APP_THEME = "spacelab.css"
+
+warn_deployment_exposure=False

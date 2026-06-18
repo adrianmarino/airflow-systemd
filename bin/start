@@ -2,29 +2,47 @@
 # -----------------------------------------------------------------------------
 # Main
 # -----------------------------------------------------------------------------
-ln -s /run/mysqld/mysqld.sock /tmp/mysql.sock
-
 ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
 
 source "$ABSDIR/../config.conf"
 
-source "$CONDA_PATH/etc/profile.d/conda.sh"
+# Asegurar que el puerto esté libre
+fuser -k $PORT/tcp || true
 
-echo "ENV: $ENV"
-conda activate $ENV
+AIRFLOW_BIN="/home/adrian/.conda/envs/$ENV/bin/airflow"
+PYTHON_BIN="/home/adrian/.conda/envs/$ENV/bin/python"
+export AIRFLOW_HOME="/home/adrian/airflow"
+export AIRFLOW__CORE__INTERNAL_API_URL="http://127.0.0.1:$PORT"
+export AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_USERS="$AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_USERS"
 
+# Esperar a que la base de datos MySQL en el puerto 3307 esté lista antes de arrancar los servicios de Airflow
+echo "Waiting for database on 127.0.0.1:3307..."
+for i in {1..60}; do
+    $PYTHON_BIN -c "import socket; s = socket.socket(); s.settimeout(1); s.connect(('127.0.0.1', 3307)); s.close()" >/dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "Database is ready!"
+        break
+    fi
+    sleep 1
+done
 
-source "$ABSDIR/../config.conf"
+echo "Start airflow api-server"
+nohup $AIRFLOW_BIN api-server --host 0.0.0.0 --port $PORT > "$AIRFLOW_HOME/logs/api-server.out" 2>&1 &
 
+echo "Waiting for api-server to be ready..."
+for i in {1..30}; do
+    curl -s http://127.0.0.1:$PORT/health > /dev/null && break
+    sleep 1
+done
+
+echo "Start airflow dag-processor"
+nohup $AIRFLOW_BIN dag-processor > "$AIRFLOW_HOME/logs/dag-processor.out" 2>&1 &
+
+echo "Start airflow triggerer"
+nohup $AIRFLOW_BIN triggerer > "$AIRFLOW_HOME/logs/triggerer.out" 2>&1 &
 
 echo "Start airflow scheduler"
-pwd
+nohup $AIRFLOW_BIN scheduler > "$AIRFLOW_HOME/logs/scheduler.out" 2>&1 & 
 
-/usr/bin/nohup airflow scheduler & 
-
-sleep 3
-
-echo "Start airflow web application"
-/usr/bin/nohup airflow webserver --port $PORT &
 # ----------------------------------------------------------------------------
