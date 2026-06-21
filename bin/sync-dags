@@ -1,0 +1,37 @@
+#!/bin/bash
+# -----------------------------------------------------------------------------
+# Airflow DAGs Synchronization Script
+# -----------------------------------------------------------------------------
+echo "================================================================================"
+echo "🔄 Synchronizing Airflow DAGs from source repositories..."
+echo "================================================================================"
+
+# Source directories
+THESIS_DAGS="/home/adrian/development/personal/maestria/thesis-paper/dags"
+RECSYS_DAGS="/home/adrian/rec-sys/dags"
+
+# Destination directory
+AIRFLOW_DAGS="/home/adrian/airflow/dags"
+
+# Create destination if it doesn't exist
+mkdir -p "$AIRFLOW_DAGS"
+
+# Sync Thesis project DAGs (primary)
+if [ -d "$THESIS_DAGS" ]; then
+    echo "• Copying DAGs from Thesis project..."
+    rsync -av --exclude='.ipynb_checkpoints' "$THESIS_DAGS/" "$AIRFLOW_DAGS/"
+else
+    echo "⚠️ Warning: Thesis project DAGs directory not found at $THESIS_DAGS"
+fi
+
+# Sync Rec-Sys project DAGs (supplementary)
+if [ -d "$RECSYS_DAGS" ]; then
+    echo "• Copying DAGs from Rec-Sys project..."
+    rsync -av --exclude='.ipynb_checkpoints' "$RECSYS_DAGS/" "$AIRFLOW_DAGS/"
+else
+    echo "⚠️ Warning: Rec-Sys project DAGs directory not found at $RECSYS_DAGS"
+fi
+
+echo "================================================================================"
+echo "✅ Synchronization complete! Airflow DAGs have been successfully updated."
+echo "================================================================================"
